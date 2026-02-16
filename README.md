@@ -2,6 +2,20 @@
 
 Automated cricket match reaction bot for X (Twitter). Watches match events, detects narrative, generates candidate posts, predicts engagement, and posts the best one with safety checks and optional feedback learning.
 
+## Example output
+
+Example posts generated and posted by the agent (India vs Pakistan, T20 World Cup):
+
+| |
+|:--:|
+| ![Example post 1](assets/example-post-1.png) |
+| *"Just when we thought we'd crack under pressure, the Men in Blue stood tall! 61 runs clear of Pakistan..."* |
+
+| |
+|:--:|
+| ![Example post 2](assets/example-post-2.png) |
+| *"India just schooled Pakistan! 61 runs is a statement, not just a victory..."* |
+
 ## Architecture
 
 ```
@@ -35,6 +49,7 @@ Match feed / events
 
 ```
 cricket-ai-agent/
+├── assets/                  # Example screenshots for README
 ├── app/
 │   ├── main.py              # Entry: setup_logger(); run_cycle() loop or feedback mode
 │   ├── config.py            # Env (OpenAI, X API, delays)
