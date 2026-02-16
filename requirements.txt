@@ -1,0 +1,7 @@
+openai
+tweepy
+apscheduler
+python-dotenv
+requests
+numpy
+flask

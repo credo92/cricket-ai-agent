@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  cricket-ai-v5:
+    build: .
+    container_name: cricket_ai_v5
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
